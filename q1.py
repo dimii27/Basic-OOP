@@ -12,8 +12,3 @@ class Person(object):
     def repeat(self):
         last = Person.last_word
         return last
-
-steven = Person("Steven")
-steven.say("Hello")
-steven.repeat()
-print(steven.last_word)
