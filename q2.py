@@ -11,3 +11,9 @@ class Person(object):
         return self.say("Hello, my name is " + self.name)
     def repeat(self):
         return self.last_word
+
+class DoubleTalker(Person):
+    def __init__(self, name):
+        Person.__init__(self, name)
+    def say(self, stuff):
+        return Person.say(self, stuff + " " + stuff)
